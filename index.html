@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Set Data In Local storage
+      let worker = {
+      nmae:"raja",
+      salary:2000
+      };
+      let worker2 = {
+        nmae:"dev",
+      salary:2290,
+      };
+      let worker3 = {
+        nmae:"raju",
+      salary:2980,
+      };
+
+      // Set Data In Localstorage
+      localStorage.setItem("worker", JSON.stringify(worker));
+      localStorage.setItem("worker2", JSON.stringify(worker2));
+      localStorage.setItem("worker3", JSON.stringify(worker3));
+
+      let user = localStorage.getItem("worker2");
+
+      console.log(user);
+      
+    </script>
+  </body>
+</html>
